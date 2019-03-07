@@ -2,20 +2,15 @@ FROM openjdk:8-jre-alpine
 
 LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
-ENV RELDATE=2019-02-07T13_56_10Z \
+ENV RELDATE=2019-03-06T09_40_41Z \
     ARCHIVE=pwm-onejar-1.8.0-SNAPSHOT.jar \
-    MYSQL_DRIVER_VERSION=8.0.15 \
-    POSTGRES_DRIVER_VERSION=42.2.5 \
-    MONGODB_DRIVER_VERSION=3.9.1 \
-    MARIADB_DRIVER_VERSION=2.4.0 \
-    PWM_APPLICATIONPATH=/usr/share/pwm/ \
+    PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
     PACKAGES="supervisor wget"
 
-# Install additional packages
 RUN apk add --update --no-cache $PACKAGES && \
-    mkdir -p $PWM_APPLICATIONPATH $SUPERVISOR_PATH && \
-    cd $PWM_APPLICATIONPATH && \
+    mkdir -p $PWM_PATH $SUPERVISOR_PATH && \
+    cd $PWM_PATH && \
     wget https://www.pwm-project.org/artifacts/pwm/${RELDATE}/${ARCHIVE} && \
     rm -rf /var/cache/apk/*
 

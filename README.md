@@ -1,5 +1,5 @@
 # pwm
-Lighteweight and updated PWM Password Manager container. This container uses the onejar version of the PWM Project. 
+Lightweight and updated PWM Password Manager container. This container uses the onejar version of the PWM Project. 
 Any questions about the PWM Project should be search [here](https://github.com/pwm-project/pwm).
 
 ## How to use
@@ -26,11 +26,7 @@ These are the version of the package used by the container.
 |  NAME  | Info | 
 |:------:|:-------:|
 |   PWM Version  | pwm-onejar-1.8.0-SNAPSHOT.jar |
-|   RELEASE_DATE |  2019-02-07T13_56_10Z | 
-|   MYSQL_DRIVER_VERSION  | 8.0.15 | 
-|   POSTGRES_DRIVER_VERSION | 42.2.5 |
-|   MONGODB_DRIVER_VERSION  | 3.9.1  |
-|   MARIADB_DRIVER_VERSION  | 2.4.0 | 
+|   RELEASE_DATE |  2019-03-06T09_40_41Z | 
 
 ## References
 
