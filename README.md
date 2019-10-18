@@ -26,7 +26,7 @@ These are the version of the package used by the container.
 |  NAME  | Info | 
 |:------:|:-------:|
 |   PWM Version  | pwm-onejar-1.8.0-SNAPSHOT.jar |
-|   RELEASE_DATE |  2019-08-05T00_11_43Z | 
+|   RELEASE_DATE |  2019-10-17T15_44_23Z | 
 
 ## References
 
