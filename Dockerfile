@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 
 LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
-ENV RELDATE=2020-01-09T10_10_02Z \
+ENV RELDATE=2020-05-07T23_05_13Z \
     ARCHIVE=pwm-onejar-2.0.0-SNAPSHOT.jar \
     PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
