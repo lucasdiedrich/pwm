@@ -2,6 +2,8 @@ FROM openjdk:8-jre-alpine
 
 LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
+COPY files/ /
+
 ENV RELDATE=2020-03-19T20_16_30Z \
     ARCHIVE=pwm-onejar-2.0.0-SNAPSHOT.jar \
     PWM_PATH=/usr/share/pwm/ \
@@ -16,7 +18,6 @@ RUN apk add --update --no-cache $PACKAGES && \
     wget https://www.pwm-project.org/artifacts/pwm/build/${RELDATE}/${ARCHIVE} && \
     rm -rf /var/cache/apk/*
 
-COPY files/ /
 WORKDIR /config
 VOLUME [ "/config" ]
 
