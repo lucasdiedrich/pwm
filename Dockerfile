@@ -7,7 +7,7 @@ ENV RELDATE=2020-03-19T20_16_30Z \
     PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
     PACKAGES="supervisor wget" \
-    JAVA_OPTS="-server -Xmx1g -Xms1g -Xlog:gc:file=/config/logs/gc.log:time,uptime,level,tags:filecount=10,filesize=10M"
+    JAVA_OPTS="-server -Xmx1g -Xms1g"
 
 RUN apk add --update --no-cache $PACKAGES && \
     mkdir -p $PWM_PATH $SUPERVISOR_PATH && \
