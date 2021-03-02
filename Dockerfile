@@ -1,4 +1,4 @@
-FROM openjdk:15-jdk-slim-buster
+FROM openjdk:15-alpine3.11
 
 LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
