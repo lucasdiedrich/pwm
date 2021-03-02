@@ -1,4 +1,4 @@
-FROM openjdk:15-alpine3.11
+FROM openjdk:13-alpine3.9
 
 LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
@@ -9,7 +9,7 @@ ENV RELDATE=2021-02-26T00_15_08Z \
     PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
     PACKAGES="supervisor wget" \
-    JAVA_OPTS="-server -Xmx1g -Xms1g"
+    JAVA_OPTS="-server -Xmx2g -Xms2g"
 
 RUN apk add --update --no-cache $PACKAGES && \
     mkdir -p $PWM_PATH $SUPERVISOR_PATH && \
