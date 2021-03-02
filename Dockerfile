@@ -1,15 +1,15 @@
-FROM openjdk:13-alpine3.9
+FROM openjdk:8-jre-alpine
 
 LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
 COPY files/ /
 
-ENV RELDATE=2021-02-26T00_15_08Z \
+ENV RELDATE=2020-12-29T23_54_04Z \
     ARCHIVE=pwm-onejar-2.0.0-SNAPSHOT.jar \
     PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
     PACKAGES="supervisor wget" \
-    JAVA_OPTS="-server -Xmx2g -Xms2g"
+    JAVA_OPTS="-server -Xmx1g -Xms1g"
 
 RUN apk add --update --no-cache $PACKAGES && \
     mkdir -p $PWM_PATH $SUPERVISOR_PATH && \
