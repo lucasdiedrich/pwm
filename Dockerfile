@@ -4,7 +4,7 @@ LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
 
 COPY files/ /
 
-ENV RELDATE=2020-03-19T20_16_30Z \
+ENV RELDATE=2021-02-26T00_15_08Z \
     ARCHIVE=pwm-onejar-2.0.0-SNAPSHOT.jar \
     PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
