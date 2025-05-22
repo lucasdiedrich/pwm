@@ -25,8 +25,8 @@ These are the version of the package used by the container.
 
 |  NAME  | Info | 
 |:------:|:-------:|
-|   PWM Version  | pwm-onejar-2.0.3.jar |
-|   RELEASE_DATE |  Released July 30, 2022 | 
+|   PWM Version  | pwm-onejar-2.0.8.jar |
+|   RELEASE_DATE |  Released Feb 21, 2025 | 
 
 ## References
 
